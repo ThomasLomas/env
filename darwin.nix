@@ -23,8 +23,23 @@
 
   programs = {
     gnupg.agent.enable = true;
-    zsh.enable = true;  # default shell on catalina
   };
+
+  programs.fish = {
+    enable = true;
+
+    shellInit = ''
+      # As per Homebrew installation instructions.
+      eval "$(/opt/homebrew/bin/brew shellenv)"
+
+      # Workaround for the following issue:
+      # - https://github.com/LnL7/nix-darwin/issues/122
+      # - https://d12frosted.io/posts/2021-05-21-path-in-fish-with-nix-darwin.html
+      for p in (string split " " $NIX_PROFILES); fish_add_path --prepend --move --path $p/bin; end
+    '';
+  };
+
+  environment.shells = [ pkgs.fish ];
 
   security.pam.enableSudoTouchIdAuth = true;
 
