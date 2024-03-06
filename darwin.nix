@@ -45,11 +45,20 @@
 
   homebrew = {
     enable = true;
+
+    # These app IDs are from using the mas CLI app
+    # mas = mac app store
+    # https://github.com/mas-cli/mas
+    #
+    # $ nix shell nixpkgs#mas
+    # $ mas search <app name>
+    #
     masApps = {
       Xcode = 497799835;
       Word = 462054704;
       Excel = 462058435;
       OneDrive = 823766827;
+      Bitwarden = 1352778147;
     };
     casks = [
       "docker"
@@ -58,6 +67,8 @@
       "iterm2"
       "whatsapp"
       "zoom"
+      "mullvadvpn"
+      "vlc"
     ];
   };
 
