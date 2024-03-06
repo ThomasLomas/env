@@ -156,6 +156,7 @@
       esbenp.prettier-vscode
       dbaeumer.vscode-eslint
       jnoortheen.nix-ide
+      ms-vscode-remote.remote-containers
     ];
   };
 
