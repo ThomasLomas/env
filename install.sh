@@ -7,6 +7,8 @@ cd "$(dirname "$0")"
 
 nix run nix-darwin -- switch --flake .
 
+chsh -s /run/current-system/sw/bin/fish
+
 ./configure-mac.sh
 
 #ln -s "$PWD"/config/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
