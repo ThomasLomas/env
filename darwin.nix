@@ -69,6 +69,10 @@
       "zoom"
       "mullvadvpn"
       "vlc"
+      "raycast"
+      "rectangle"
+      "alt-tab"
+      "steam"
     ];
   };
 
