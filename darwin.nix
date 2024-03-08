@@ -39,6 +39,12 @@
     '';
   };
 
+  system.defaults = {
+    dock = {
+      show-recents = false;
+    };
+  };
+
   environment.shells = [ pkgs.fish ];
 
   security.pam.enableSudoTouchIdAuth = true;
@@ -60,6 +66,9 @@
       OneDrive = 823766827;
       Bitwarden = 1352778147;
     };
+
+    # Some grief encountered with items being removed not being
+    # uninstalled automatically
     casks = [
       "docker"
       "discord"
@@ -77,6 +86,7 @@
     ];
   };
 
+  # Necessary for VS Code to be installed
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "vscode"
   ];

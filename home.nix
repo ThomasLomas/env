@@ -14,8 +14,8 @@
   home.stateVersion = "23.05"; # Please read the comment before changing.
 
   home.packages = with pkgs; [
-    duti
-    nixpkgs-fmt
+    duti # Mac default app to open file with
+    nixpkgs-fmt # Necessary for NIX VSCode Extension 
   ];
 
   programs.home-manager.enable = true;
