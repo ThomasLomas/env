@@ -15,6 +15,7 @@
 
   home.packages = with pkgs; [
     duti
+    nixpkgs-fmt
   ];
 
   programs.home-manager.enable = true;

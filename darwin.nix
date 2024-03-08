@@ -73,6 +73,7 @@
       "rectangle"
       "alt-tab"
       "steam"
+      "displaylink"
     ];
   };
 
