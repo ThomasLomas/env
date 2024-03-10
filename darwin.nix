@@ -64,7 +64,6 @@
       Word = 462054704;
       Excel = 462058435;
       OneDrive = 823766827;
-      Bitwarden = 1352778147;
     };
 
     # Some grief encountered with items being removed not being
@@ -84,6 +83,7 @@
       "steam"
       "displaylink"
       "hiddenbar"
+      "1password"
     ];
   };
 

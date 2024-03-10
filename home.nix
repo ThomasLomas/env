@@ -159,6 +159,7 @@
       jnoortheen.nix-ide
       ms-vscode-remote.remote-containers
       editorconfig.editorconfig
+      github.copilot
     ];
   };
 
