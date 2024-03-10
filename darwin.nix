@@ -83,6 +83,7 @@
       "alt-tab"
       "steam"
       "displaylink"
+      "hiddenbar"
     ];
   };
 
