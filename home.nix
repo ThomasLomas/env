@@ -15,7 +15,7 @@
 
   home.packages = with pkgs; [
     duti # Mac default app to open file with
-    nixpkgs-fmt # Necessary for NIX VSCode Extension 
+    nixpkgs-fmt # Necessary for NIX VSCode Extension
   ];
 
   programs.home-manager.enable = true;
@@ -158,6 +158,7 @@
       dbaeumer.vscode-eslint
       jnoortheen.nix-ide
       ms-vscode-remote.remote-containers
+      editorconfig.editorconfig
     ];
   };
 
