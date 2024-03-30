@@ -19,5 +19,14 @@
   "terminal.integrated.defaultProfile.linux": "fish",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true
+  "files.trimTrailingWhitespace": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  }
 }

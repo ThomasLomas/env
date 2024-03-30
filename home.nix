@@ -122,8 +122,16 @@
     userName = "Thomas Lomas";
     userEmail = "tlomas@gmail.com";
 
+    signing = {
+      key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBeBgR4Z5a4ehEKxVk98Xsa90tPciP4u86FHRdSWzgQr";
+      signByDefault = true;
+    };
+
     extraConfig = {
       init.defaultBranch = "main";
+
+      gpg.format = "ssh";
+      gpg."ssh".program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
 
       push = {
         autoSetupRemote = true;
