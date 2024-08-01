@@ -75,7 +75,6 @@
       "iterm2"
       "whatsapp"
       "zoom"
-      "mullvadvpn"
       "vlc"
       "raycast"
       "rectangle"
@@ -84,6 +83,13 @@
       "displaylink"
       "hiddenbar"
       "1password"
+      "bruno"
+    ];
+    
+    brews = [
+      "wget"
+      "fd"
+      "ripgrep"
     ];
   };
 

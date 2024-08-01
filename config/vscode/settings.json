@@ -12,21 +12,25 @@
   "terminal.integrated.defaultProfile.osx": "nixFish",
   "terminal.integrated.profiles.osx.nixFish": {
     "path": "/etc/profiles/per-user/tom/bin/fish",
-    "args": [
-      "-l"
-    ]
+    "args": ["-l"]
   },
   "terminal.integrated.defaultProfile.linux": "fish",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
+    "go": true
   },
   "[go]": {
     "editor.defaultFormatter": "golang.go"
-  }
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "git.confirmSync": false,
+  "zig.zls.path": "/Users/tom/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+  "zig.initialSetupDone": true,
+  "zig.path": "/Users/tom/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig"
 }
